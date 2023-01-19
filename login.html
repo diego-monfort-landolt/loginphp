@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="DE">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+<!--style section center form and animation-->
+    <style>
+       .container {
+        
+        display: flex; 
+        flex-wrap: wrap;
+         display: -webkit-flex; 
+         height: 200px; 
+         width: 50%; 
+         margin: auto; 
+         border-radius: 10px; 
+         outline: .5px solid red; 
+         background-color: #e6ecff;
+         border-radius: 5px;
+         margin: 5rem auto;
+         box-shadow: 8px 8px 8px 0 #444;
+         overflow: hidden;
+         animation: myAnim 5s ease 0s 1 normal forwards;
+			}
+			.centered-element {
+				text-align: right; 
+                margin: auto;
+                padding:10px;
+
+				
+			}
+            .btn {
+                display: flex;
+                justify-content : center;
+                align-items : center;
+                margin: 0 0 0 7rem;
+            }
+            .btn:hover {
+                background:red;
+                color:#444;
+                padding:5px;
+                border-radius: 5px;
+                box-shadow: 8px 8px 8px 0 #444;
+                transition:.5s all;
+
+            }
+            @keyframes myAnim {
+	0%,
+	100% {
+		transform: rotate(0deg);
+		transform-origin: 50% 50%;
+	}
+
+	10% {
+		transform: rotate(8deg);
+	}
+
+	20%,
+	40%,
+	60% {
+		transform: rotate(-10deg);
+	}
+
+	30%,
+	50%,
+	70% {
+		transform: rotate(10deg);
+	}
+
+	80% {
+		transform: rotate(-8deg);
+	}
+
+	90% {
+		transform: rotate(8deg);
+	}
+}
+    </style>
+</head>
+<body>
+<section class="container">
+<form action="login.php" method="POST" class="centered-element"></p>
+    <p>User:  <input type="text" name="Usuario" placeholder="User"></input>
+    <p>Password: <input type="password" name="Password" placeholder="Passwort" required></input></p>
+
+    <input type="submit" name="enviar" class="btn" placeholder="Login"/>
+</form>
+</section>
+
+<h2>Login: usuario1 / <b>Password: usuario123</b></h2>
+
+
+    
+</body>
+</html>
